@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập xây dựng lớp nhiệt độ Temprature</title>
+</head>
+<body>
+    <script>
+        class Celcius{
+            constructor(heat){
+                this.heat = heat;
+            }
+            toF(){
+                if (this.heat>-273) return (this.heat*9/5)+32;
+                else return alert('Invalid');
+            }
+            toK(){
+                if (this.heat>-273) return this.heat + 273;
+                else return alert('Invalid');
+
+            }
+        }
+
+        let temp = new Celcius(60);
+        console.log(temp.toF());
+        console.log(temp.toK());
+    </script>
+</body>
+</html>
